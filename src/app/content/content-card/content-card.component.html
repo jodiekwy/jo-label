@@ -1,0 +1,20 @@
+<div mat-dialog-content>
+    <mat-card class="display-card">
+        <mat-card-title>{{data.name}}</mat-card-title>
+        <mat-card-subtitle>{{data.country}}</mat-card-subtitle>
+        <img mat-card-image src="{{data.imgpath}}" alt="Photo of {{data.name}}">
+        <mat-card-content>
+            <p>
+            {{data.review}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions align="end">
+            <a target="_blank" href="{{data.website}}" rel="noopener">
+                <button mat-icon-button matTooltip="Visit offical link"
+                aria-label="Visit offical link"><mat-icon>open_in_new</mat-icon></button>
+            </a>
+            <button mat-icon-button matTooltip="Close"
+            aria-label="Close" (click)="closedialog()"><mat-icon>close</mat-icon></button>
+        </mat-card-actions>
+    </mat-card>
+</div>

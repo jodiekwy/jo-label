@@ -1,0 +1,19 @@
+:host {
+    display: block;
+    // padding: 10px 40PX;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-card {
+    max-width: 400PX;
+}
+
+.mat-card-actions {
+    padding: 0px;
+}
+
+.mat-card-actions button:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}

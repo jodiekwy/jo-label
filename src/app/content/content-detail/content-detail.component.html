@@ -1,0 +1,21 @@
+<div class="content">
+    <h2>My Travel Blog</h2>
+    <p class="icon">
+        <mat-icon [inline]="true">map</mat-icon>
+    </p>
+    <p>
+        Just want to share some of the places that I have travled to before with everyone!
+        This list will defintly continue to grow too!
+    </p>
+    <div class="card-container">
+        <!-- select botton -->
+        <input type="hidden" #selection>
+        <div *ngFor="let city of cities">
+            <button class="card" (click)="openDialog(city.id)" tabindex="0">
+                <mat-icon>flight</mat-icon>
+                <span>{{ city.name }}</span>
+                <mat-icon>navigate_next</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
